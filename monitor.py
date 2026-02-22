@@ -125,13 +125,13 @@ def run():
                             console.print(f"[bold green]✔ PID {pid_input} yok edildi![/bold green]")
                             time.sleep(1)
                         except ProcessLookupError:
-                            console.print("[bold red]❌ Hata: Bu PID mevcut değil.[/bold red]")
+                            console.print("[bold red]  Hata: Bu PID mevcut değil.[/bold red]")
                             time.sleep(1.5)
                         except PermissionError:
-                            console.print("[bold red]❌ Hata: Yetki yok! sudo kullanın.[/bold red]")
+                            console.print("[bold red]  Hata: Yetki yok! sudo kullanın.[/bold red]")
                             time.sleep(1.5)
                         except Exception as e:
-                            console.print(f"[bold red]❌ Hata: {e}[/bold red]")
+                            console.print(f"[bold red] Hata: {e}[/bold red]")
                             time.sleep(1.5)
                     else:
                         console.print("[dim]İşlem iptal edildi.[/dim]")
